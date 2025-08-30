@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Ravi",
+    "skill": "Ploughing",
+    "available": true
+  },
+  {
+    "id": 2,
+    "name": "Sita",
+    "skill": "Harvesting",
+    "available": false
+  },
+  {
+    "id": 1756486168050,
+    "name": "u7iyyu",
+    "skill": "uygyu",
+    "available": true
+  }
+]

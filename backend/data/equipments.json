@@ -1,0 +1,4 @@
+[
+  { "id": 1, "name": "Tractor", "available": true },
+  { "id": 2, "name": "Harvester", "available": false }
+]
