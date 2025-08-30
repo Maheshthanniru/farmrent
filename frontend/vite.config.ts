@@ -6,7 +6,8 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
-    minify: 'terser',
+    minify: 'esbuild', // Faster than terser
+    target: 'es2015',
     rollupOptions: {
       output: {
         manualChunks: {
@@ -17,7 +18,8 @@ export default defineConfig({
           state: ['zustand']
         }
       }
-    }
+    },
+    chunkSizeWarningLimit: 1000
   },
   server: {
     port: 5173,
@@ -26,5 +28,8 @@ export default defineConfig({
   preview: {
     port: 4173,
     host: true
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-router-dom']
   }
 });
